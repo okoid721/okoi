@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KINGS</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="contain">
+        <div class="navbar">
+            <img src="logo2.jpeg" class="logo">
+            <nav>
+                <ul id="menulist">
+                    <li><a href="">king dave</a></li>
+                    <li><a href="">Check my potfolio</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Help</a></li>
+                </ul>
+            </nav>
+            <div class="menu" onclick="Togglemenu()">=</div> 
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <h2>WEB developer</h2>
+                <h3>html/css/javascript</h3>
+                <p>(compatible/generic)</p>
+                <h4>for free</h4>
+                <button type="button">call now</button>
+            </div>
+            <div class="col-2">
+                <img src="HTML.webp" class="controller">
+                <div class="color-box"></div>
+            </div>
+        </div>
+        <div class="social-icon"></div>
+    </div>
+    <script>
+        var menulist = document.getElementById("menulist")
+        menulist.style.maxHeight = "0px"
+        function Togglemenu(){
+            if( menulist.style.maxHeight== "0px")
+            {
+                menulist.style.maxHeight = "130px"
+            }
+            else
+            {
+                menulist.style.maxHeight = "0px"
+            }
+        }
+    </script>
+</body>
+</html>
